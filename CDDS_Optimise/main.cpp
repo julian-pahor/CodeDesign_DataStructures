@@ -29,8 +29,8 @@ int main(int argc, char* argv[])
 {
     // Initialization
     //--------------------------------------------------------------------------------------
-    int screenWidth = 800;
-    int screenHeight = 450;
+    int screenWidth = 1600;
+    int screenHeight = 900;
 
     InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
 
@@ -39,11 +39,11 @@ int main(int argc, char* argv[])
 
     srand(time(NULL));
 
-
+    //600 - 1000 fps with max critters = aim
     Critter critters[1000]; 
 
     // create some critters
-    const int CRITTER_COUNT = 50;
+    const int CRITTER_COUNT = 1000;
     const int MAX_VELOCITY = 80;
 
     for (int i = 0; i < CRITTER_COUNT; i++)
@@ -134,6 +134,11 @@ int main(int argc, char* argv[])
         }
                 
         // check for critter-on-critter collisions
+
+        ////////n^2 loop for collisions???
+        //1. Spatial Hashing
+        //2. binary space partitioning (binary tree)
+
         for (int i = 0; i < CRITTER_COUNT; i++)
         {            
             for (int j = 0; j < CRITTER_COUNT; j++){

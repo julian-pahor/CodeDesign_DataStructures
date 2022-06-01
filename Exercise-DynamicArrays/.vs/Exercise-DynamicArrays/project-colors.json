@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "eff3ad60-1022-46a7-97cd-8f1f2b041866": {
+      "ProjectGuid": "eff3ad60-1022-46a7-97cd-8f1f2b041866",
+      "DisplayName": "Exercise-DynamicArrays",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

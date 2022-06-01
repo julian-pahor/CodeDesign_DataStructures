@@ -11,6 +11,7 @@ Critter::Critter()
 
 Critter::~Critter()
 {
+	//Hmm, unloading texture everytime
 	UnloadTexture(m_texture);
 	m_isLoaded = false;
 }
@@ -21,6 +22,7 @@ void Critter::Init(Vector2 position, Vector2 velocity, float radius, const char*
 	m_velocity = velocity;
 	m_radius = radius;
 	
+	//Hmmm, loading texture everytime
 	m_texture = LoadTexture(texture);	
 
 	m_isLoaded = true;
