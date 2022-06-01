@@ -10,8 +10,8 @@ CDDS_AlgorithmsApp::~CDDS_AlgorithmsApp() {
 
 bool CDDS_AlgorithmsApp::startup() {
 
-	m_croissant = LoadTexture("croissant.png");
-	m_cupcake = LoadTexture("cake.png");
+	m_croissant = LoadTexture("character_robot_fallDown.png");
+	m_cupcake = LoadTexture("character_zombie_wide.png");
 
 	for (int i = 0; i < COLUMNS; i++) {
 		for (int j = 0; j < ROWS; j++) {
@@ -38,7 +38,6 @@ void CDDS_AlgorithmsApp::shutdown()
 bool CDDS_AlgorithmsApp::checkForWin()
 {
 	// brute force approach -- is there a better way? (hint: yes, there is)
-
 	for (int x = 0; x < COLUMNS; x++)
 	{
 		for (int y = 0; y < ROWS; y++)
