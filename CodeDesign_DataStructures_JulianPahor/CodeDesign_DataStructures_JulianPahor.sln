@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CodeDesign_DataStructures_JulianPahor", "CodeDesign_DataStructures_JulianPahor.vcxproj", "{F7623912-C73B-4036-A156-C8B16C5F3536}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CDDS_Algorithms", "..\CDDS_Algorithms\CDDS_Algorithms.vcxproj", "{886E232E-C0B8-47C0-BE5C-5E50D4474893}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{F7623912-C73B-4036-A156-C8B16C5F3536}.Release|x64.Build.0 = Release|x64
 		{F7623912-C73B-4036-A156-C8B16C5F3536}.Release|x86.ActiveCfg = Release|Win32
 		{F7623912-C73B-4036-A156-C8B16C5F3536}.Release|x86.Build.0 = Release|Win32
+		{886E232E-C0B8-47C0-BE5C-5E50D4474893}.Debug|x64.ActiveCfg = Debug|x64
+		{886E232E-C0B8-47C0-BE5C-5E50D4474893}.Debug|x64.Build.0 = Debug|x64
+		{886E232E-C0B8-47C0-BE5C-5E50D4474893}.Debug|x86.ActiveCfg = Debug|Win32
+		{886E232E-C0B8-47C0-BE5C-5E50D4474893}.Debug|x86.Build.0 = Debug|Win32
+		{886E232E-C0B8-47C0-BE5C-5E50D4474893}.Release|x64.ActiveCfg = Release|x64
+		{886E232E-C0B8-47C0-BE5C-5E50D4474893}.Release|x64.Build.0 = Release|x64
+		{886E232E-C0B8-47C0-BE5C-5E50D4474893}.Release|x86.ActiveCfg = Release|Win32
+		{886E232E-C0B8-47C0-BE5C-5E50D4474893}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
