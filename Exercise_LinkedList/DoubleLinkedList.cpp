@@ -158,7 +158,38 @@ void DoubleLinkedList::erase(Node* node)
 
 void DoubleLinkedList::remove(int value)
 {
+	
+	bool removing = true;
+	Node* currentNode = nullptr;
+	Node* nextNode = nullptr;
 
+	if (head != nullptr)
+	{
+		currentNode = head;
+
+		while (removing)
+		{
+			removing = false;
+
+			if (currentNode != tail)
+			{
+				if (currentNode->data = value)
+				{
+					nextNode = currentNode->next;
+					erase(currentNode);
+				}
+
+				removing = true;
+			}
+			else
+			{
+				if (currentNode->data = value)
+				{
+					erase(currentNode);
+				}
+			}
+		}
+	}
 }
 
 bool DoubleLinkedList::empty()

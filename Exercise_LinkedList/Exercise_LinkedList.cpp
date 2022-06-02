@@ -8,14 +8,14 @@ int main()
     DoubleLinkedList list;
     
     list.pushFront(4);
-    list.pushFront(3);
-    list.pushFront(2);
+    list.pushFront(4);
+    list.pushFront(4);
     list.pushBack(5);
     list.pushBack(6);
     
-    list.popFront();
-
-    list.popBack();
+    
+    //list.remove(4);
+    
 
     std::cout << list.count() << std::endl;
 
