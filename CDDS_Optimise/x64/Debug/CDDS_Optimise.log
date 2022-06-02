@@ -1,30 +1,15 @@
 ﻿  main.cpp
 C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(40,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(171,9): error C2065: 'timer': undeclared identifier
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(171,18): error C2065: 'delta': undeclared identifier
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(172,13): error C2065: 'timer': undeclared identifier
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(174,13): error C2065: 'timer': undeclared identifier
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(181,55): error C2065: 'destroyer': undeclared identifier
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(184,35): error C2065: 'destroyer': undeclared identifier
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(191,13): error C2065: 'nextSpawnPos': undeclared identifier
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(191,28): error C2065: 'destroyer': undeclared identifier
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(208,9): error C2065: 'destroyer': undeclared identifier
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(217,5): error C2059: syntax error: 'for'
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(217,5): error C2143: syntax error: missing ')' before ';'
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(217,23): error C2143: syntax error: missing ';' before '<'
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(217,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(217,41): error C2143: syntax error: missing ';' before '++'
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(217,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(217,40): error C2086: 'int i': redefinition
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(217): message : see declaration of 'i'
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(217,43): error C2059: syntax error: ')'
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(218,5): error C2143: syntax error: missing ';' before '{'
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(218,5): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(224,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(224,18): error C2556: 'int CloseWindow(void)': overloaded function differs only by return type from 'void CloseWindow(void)'
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.6\build\native\include\raylib.h(907): message : see declaration of 'CloseWindow'
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(224,5): error C2371: 'CloseWindow': redefinition; different basic types
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.6\build\native\include\raylib.h(907): message : see declaration of 'CloseWindow'
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(227,5): error C2059: syntax error: 'return'
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(228,1): error C2059: syntax error: '}'
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(228,1): error C2143: syntax error: missing ';' before '}'
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(52,34): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(52,34): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(52,53): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(52,53): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(65,31): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(65,31): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(65,54): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(65,54): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(90,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(98,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(114,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(122,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  CDDS_Optimise.vcxproj -> C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\bin\x64\Debug\CDDS_Optimise.exe
