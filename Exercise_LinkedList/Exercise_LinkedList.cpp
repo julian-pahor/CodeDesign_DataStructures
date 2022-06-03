@@ -14,7 +14,7 @@ int main()
     list.pushBack(6);
     
     
-    //list.remove(4);
+    list.clear();
     
 
     std::cout << list.count() << std::endl;

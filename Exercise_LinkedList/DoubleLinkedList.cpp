@@ -68,34 +68,27 @@ void DoubleLinkedList::insert(Node* node, int value)
 int DoubleLinkedList::count()
 {
 	int counter = 0;
-	Node* currentNode;
-	
-	if (head != nullptr)
-	{
-		currentNode = head;
-		counter++;
-	}
-	else
+
+	if (head == nullptr)
 	{
 		return counter;
 	}
 
-	bool counting = true;
+	Node* currentNode;
 
-	while (counting)
+	currentNode = head;
+
+	while (currentNode != nullptr)
 	{
-		counting = false;
-
-		if (currentNode->next != nullptr)
-		{
-			currentNode = currentNode->next;
-			counter++;
-			counting = true;
-		}
+		counter++;
+		currentNode = currentNode->next;
+		
 	}
 
 	return counter;
 }
+
+	
 
 void DoubleLinkedList::popBack()
 {
@@ -106,9 +99,10 @@ void DoubleLinkedList::popBack()
 		if (tail->previous != nullptr)
 		{
 			tail->previous->next = nullptr;
+			tail = tail->previous;
 		}
 
-		tail = tail->previous;
+		
 
 		delete temp;
 	}
@@ -124,10 +118,8 @@ void DoubleLinkedList::popFront()
 		if (head->next != nullptr)
 		{
 			head->next->previous = nullptr;
+			head = head->next;
 		}
-
-		head = head->next;
-
 		delete temp;
 	}
 }
@@ -158,36 +150,29 @@ void DoubleLinkedList::erase(Node* node)
 
 void DoubleLinkedList::remove(int value)
 {
-	
-	bool removing = true;
-	Node* currentNode = nullptr;
-	Node* nextNode = nullptr;
-
-	if (head != nullptr)
+	if (head == nullptr)
 	{
-		currentNode = head;
+		return;
+	}
 
-		while (removing)
+	Node* currentNode;
+	Node* nextNode;
+
+	currentNode = head;
+
+	while (currentNode != nullptr)
+	{
+		if (currentNode->data == value)
 		{
-			removing = false;
+			nextNode = currentNode->next;
 
-			if (currentNode != tail)
-			{
-				if (currentNode->data = value)
-				{
-					nextNode = currentNode->next;
-					erase(currentNode);
-				}
+			erase(currentNode);
 
-				removing = true;
-			}
-			else
-			{
-				if (currentNode->data = value)
-				{
-					erase(currentNode);
-				}
-			}
+			currentNode = nextNode;
+		}
+		else
+		{
+			currentNode = currentNode->next;
 		}
 	}
 }
@@ -206,6 +191,26 @@ bool DoubleLinkedList::empty()
 
 void DoubleLinkedList::clear()
 {
+	if (head == nullptr)
+	{
+		return;
+	}
 
+	Node* currentNode;
+	Node* nextNode;
+
+	currentNode = head;
+
+	while (currentNode != nullptr)
+	{
+		nextNode = currentNode->next;
+
+		erase(currentNode);
+
+		currentNode = nextNode;
+	}
+
+	head = nullptr;
+	tail = nullptr;
 }
 
