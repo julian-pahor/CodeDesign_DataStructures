@@ -101,9 +101,6 @@ void DoubleLinkedList::popBack()
 			tail->previous->next = nullptr;
 			tail = tail->previous;
 		}
-
-		
-
 		delete temp;
 	}
 }

@@ -26,7 +26,13 @@ public:
 	void RemoveAtEnd();
 	void Print();
 
-	//void AddAtIndex(int value, int index);
+	void AddAtIndex(int value, int index);
+	void RemoveOrdered(int index);
+	void RemoveUnordered(int index);
+
+	void FormatSpace(); //used to reformat array to discard extra unused data
+
+	void Clear();
 
 private:
 
