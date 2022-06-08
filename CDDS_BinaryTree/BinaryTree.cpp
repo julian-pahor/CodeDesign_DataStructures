@@ -86,8 +86,29 @@ TreeNode* BinaryTree::Find(int a_nValue)
 
 bool BinaryTree::FindNode(int a_nSearchValue, TreeNode*& ppOutNode, TreeNode*& ppOutParent)
 {
+	TreeNode* currentNode = m_pRoot;
+	TreeNode* prevNode = nullptr;
 
-
+	while (currentNode != nullptr)
+	{
+		if (a_nSearchValue == currentNode->GetData())
+		{
+			return currentNode;
+		}
+		else
+		{
+			if (a_nSearchValue < currentNode->GetData())
+			{
+				prevNode = currentNode;
+				currentNode = currentNode->GetLeft();
+			}
+			else
+			{
+				prevNode = currentNode;
+				currentNode = currentNode->GetRight();
+			}
+		}
+	}
 	return false;
 }
 
