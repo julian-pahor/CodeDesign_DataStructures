@@ -1,0 +1,35 @@
+10:
+BubbleSort = 3900 nanoseconds
+InsertionSort = 600 nanoseconds
+QuickSort = 700 nanoseconds 
+MergeSort = 27700 nanoseconds
+
+100:
+BubbleSort = 18800 nanoseconds
+InsertionSort = 5500 nanoseconds
+QuickSort = 5300 nanoseconds
+MergeSort = 47700 nanoseconds
+
+1000:
+BubbleSort = 1297100 nanoseconds 0.0012 seconds
+InsertionSort = 473000 nanoseconds 0.000473 seconds
+QuickSort = 64300 nanoseconds
+MergeSort = 360000 nanoseconds
+
+10000:
+BubbleSort = 0.175692 seconds
+InsertionSort = 0.0461 seconds
+QuickSort = 0.0007926 seconds
+MergeSort = 0.0035079
+
+100000:
+BubbleSort = 20.4277 seconds
+InsertionSort = 4.5937 seconds
+QuickSort = 0.0099838 seconds
+MergeSort = 0.0374119 seconds
+
+500000:
+BubbleSort = 523.436 seconds
+InsertionSort = 115.376 seconds
+QuickSort = 0.0586 seconds
+MergeSort = 0.191569 seconds

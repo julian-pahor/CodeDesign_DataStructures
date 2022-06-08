@@ -32,12 +32,12 @@ public:
 	{ 
 		assert(head != nullptr);
 		return *head; 
-	} //assert if no elements?
+	}
 	auto last() 
 	{
 		assert(tail != nullptr);
 		return *tail;
-	} //assert if no elements?
+	} 
 
 	int count();
 
