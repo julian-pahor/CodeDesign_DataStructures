@@ -24,9 +24,15 @@
 #include <random>
 #include <time.h>
 #include "Critter.h"
+#include "ResourceManager.h"
+#include <iostream>
 
 int main(int argc, char* argv[])
 {
+    
+    ResourceManager* rm = new ResourceManager();
+    std::cout << rm->hash("Hello") << std::endl;
+
     // Initialization
     //--------------------------------------------------------------------------------------
     int screenWidth = 1600;
@@ -40,10 +46,10 @@ int main(int argc, char* argv[])
     srand(time(NULL));
 
     //600 - 1000 fps with max critters = aim
-    Critter critters[1000]; 
+    Critter critters[1]; 
 
     // create some critters
-    const int CRITTER_COUNT = 1000;
+    const int CRITTER_COUNT = 1;
     const int MAX_VELOCITY = 80;
 
     for (int i = 0; i < CRITTER_COUNT; i++)

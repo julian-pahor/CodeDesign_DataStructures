@@ -169,9 +169,11 @@
   <ItemGroup>
     <ClCompile Include="Critter.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Critter.h" />
+    <ClInclude Include="ResourceManager.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
