@@ -25,23 +25,23 @@ int main()
 
     while (!WindowShouldClose())
     {
-        if (IsKeyDown(KEY_A))
+        if (IsKeyPressed(KEY_A))
         {
             Plop("hotdog.png");
         }
-        if (IsKeyDown(KEY_S))
+        if (IsKeyPressed(KEY_S))
         {
             Plop("police.png");
         }
-        if (IsKeyDown(KEY_D))
+        if (IsKeyPressed(KEY_D))
         {
             Plop("riot.png");
         }
-        if (IsKeyDown(KEY_F))
+        if (IsKeyPressed(KEY_F))
         {
             Plop("scooter.png");
         }
-        if (IsKeyDown(KEY_G))
+        if (IsKeyPressed(KEY_G))
         {
             Plop("trucktank.png");
         }
