@@ -29,9 +29,10 @@
 
 int main(int argc, char* argv[])
 {
-    
     ResourceManager* rm = new ResourceManager();
+
     std::cout << rm->hash("Hello") << std::endl;
+    
 
     // Initialization
     //--------------------------------------------------------------------------------------
