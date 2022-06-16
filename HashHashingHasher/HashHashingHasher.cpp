@@ -15,8 +15,11 @@ std::vector<Object*> objects;
 int main()
 {
     InitWindow(800, 450, "raylib [core] example - basic window");
+    
+    SetTargetFPS(60);
 
     hashTable = new HashTable(20);
+
     hashTable->loadTexture("hotdog.png");
     hashTable->loadTexture("police.png");
     hashTable->loadTexture("riot.png");

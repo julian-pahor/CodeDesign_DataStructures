@@ -211,3 +211,14 @@ void DoubleLinkedList::clear()
 	tail = nullptr;
 }
 
+void DoubleLinkedList::print()
+{
+	if (head == nullptr)
+	{
+		std::cout << "There was no head to the Double Linked List. :'c" << std::endl;
+		return;
+	}
+
+
+}
+

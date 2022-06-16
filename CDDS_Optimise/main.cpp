@@ -36,8 +36,8 @@ int main(int argc, char* argv[])
 
     // Initialization
     //--------------------------------------------------------------------------------------
-    int screenWidth = 1600;
-    int screenHeight = 900;
+    int screenWidth = 800;
+    int screenHeight = 450;
 
     InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
 
@@ -47,10 +47,10 @@ int main(int argc, char* argv[])
     srand(time(NULL));
 
     //600 - 1000 fps with max critters = aim
-    Critter critters[1]; 
+    Critter critters[1000]; 
 
     // create some critters
-    const int CRITTER_COUNT = 1;
+    const int CRITTER_COUNT = 1000;
     const int MAX_VELOCITY = 80;
 
     for (int i = 0; i < CRITTER_COUNT; i++)

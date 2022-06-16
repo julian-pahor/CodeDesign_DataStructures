@@ -1,3 +1,15 @@
-﻿  ResourceManager.cpp
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\ResourceManager.cpp(20,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+﻿  main.cpp
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(47,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(59,34): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(59,34): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(59,53): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(59,53): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(72,31): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(72,31): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(72,54): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(72,54): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(97,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(105,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(121,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_Optimise\main.cpp(129,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   CDDS_Optimise.vcxproj -> C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\bin\x64\Debug\CDDS_Optimise.exe

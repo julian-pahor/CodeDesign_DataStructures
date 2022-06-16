@@ -4,7 +4,7 @@
 HashTable::HashTable(unsigned int size)
 {
 	m_size = size;
-	m_data = new Texture2D[size];
+	m_data = new Pair[size];
 }
 
 void HashTable::loadTexture(std::string key)
@@ -14,7 +14,17 @@ void HashTable::loadTexture(std::string key)
 
 	const char* keyChars = key.c_str();
 
-	m_data[hashedKey] = LoadTexture(keyChars);
+
+	if (!m_data[hashedKey].first)
+	{
+		m_data[hashedKey].second = LoadTexture(keyChars);
+		m_data[hashedKey].first = true;
+	}
+	else
+	{
+		std::cout << "There is already a texture loaded there!" << std::endl;
+	}
+	
 
 	
 }
@@ -23,7 +33,14 @@ Texture2D HashTable::getTexture(std::string key)
 {
 	auto hashedKey = hashFunction(key) % m_size;
 
-	return m_data[hashedKey];
+	if (m_data[hashedKey].first)
+	{
+		return m_data[hashedKey].second;
+	}
+	else
+	{
+		throw std::runtime_error("No texture in that key: " + key);
+	}
 }
 
 unsigned int HashTable::hashFunction(std::string key)

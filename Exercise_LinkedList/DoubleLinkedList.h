@@ -1,6 +1,7 @@
 #pragma once
 
 #include <assert.h>
+#include <iostream>
 
 
 class DoubleLinkedList
@@ -52,6 +53,8 @@ public:
 	bool empty();
 
 	void clear();
+
+	void print();
 	
 
 
