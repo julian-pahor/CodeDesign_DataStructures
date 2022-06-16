@@ -2,19 +2,76 @@
 //
 
 #include <iostream>
+#include "HashTable.h"
+#include"Object.h"
+#include <string>
+#include<vector>
+
+void Plop(std::string key);
+
+HashTable* hashTable;
+std::vector<Object*> objects;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    InitWindow(800, 450, "raylib [core] example - basic window");
+
+    hashTable = new HashTable(20);
+    hashTable->loadTexture("hotdog.png");
+    hashTable->loadTexture("police.png");
+    hashTable->loadTexture("riot.png");
+    hashTable->loadTexture("scooter.png");
+    hashTable->loadTexture("trucktank.png");
+
+    while (!WindowShouldClose())
+    {
+        if (IsKeyDown(KEY_A))
+        {
+            Plop("hotdog.png");
+        }
+        if (IsKeyDown(KEY_S))
+        {
+            Plop("police.png");
+        }
+        if (IsKeyDown(KEY_D))
+        {
+            Plop("riot.png");
+        }
+        if (IsKeyDown(KEY_F))
+        {
+            Plop("scooter.png");
+        }
+        if (IsKeyDown(KEY_G))
+        {
+            Plop("trucktank.png");
+        }
+
+        BeginDrawing();
+
+        for (Object* o : objects)
+        {
+            o->Draw();
+        }
+
+        ClearBackground(RAYWHITE);
+        DrawText("Congrats! You're being overrun by vehicles!", 190, 200, 20, BLACK);
+        DrawFPS(10, 10);
+        EndDrawing();
+    }
+
+    for (Object* o : objects)
+    {
+        delete o;
+    }
+
+    CloseWindow();
+
+    return 0;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+void Plop(std::string key)
+{
+    Vector2 pos = { GetRandomValue(0, GetScreenWidth()), GetRandomValue(0, GetScreenHeight()) };
+    Object* newObject = new Object(hashTable->getTexture(key), pos);
+    objects.push_back(newObject);
+}
