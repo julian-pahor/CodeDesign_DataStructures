@@ -1,6 +1,1 @@
-﻿  HashHashingHasher.cpp
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\HashHashingHasher\HashHashingHasher.cpp(76,35): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\HashHashingHasher\HashHashingHasher.cpp(76,35): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\HashHashingHasher\HashHashingHasher.cpp(76,72): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\HashHashingHasher\HashHashingHasher.cpp(76,72): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-  HashHashingHasher.vcxproj -> C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\x64\Debug\HashHashingHasher.exe
+﻿  HashHashingHasher.vcxproj -> C:\Users\Tarohadu\Documents\AIE\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\x64\Debug\HashHashingHasher.exe

@@ -1,0 +1,18 @@
+﻿  EntityEditorApp.cpp
+C:\Users\Tarohadu\Documents\AIE\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.6\build\native\include\raygui.h(2352,72): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Tarohadu\Documents\AIE\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.6\build\native\include\raygui.h(2385,68): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Tarohadu\Documents\AIE\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.6\build\native\include\raygui.h(3059,87): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Tarohadu\Documents\AIE\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.6\build\native\include\raygui.h(3060,105): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Tarohadu\Documents\AIE\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.6\build\native\include\raygui.h(3061,109): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Tarohadu\Documents\AIE\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.6\build\native\include\raygui.h(3062,109): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Tarohadu\Documents\AIE\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.6\build\native\include\raygui.h(3063,109): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Tarohadu\Documents\AIE\Repos\CodeDesign_DataStructures\CDDS_IPC_EntityEditor\EntityEditorApp.cpp(36,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Tarohadu\Documents\AIE\Repos\CodeDesign_DataStructures\CDDS_IPC_EntityEditor\EntityEditorApp.cpp(38,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Tarohadu\Documents\AIE\Repos\CodeDesign_DataStructures\CDDS_IPC_EntityEditor\EntityEditorApp.cpp(39,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Tarohadu\Documents\AIE\Repos\CodeDesign_DataStructures\CDDS_IPC_EntityEditor\EntityEditorApp.cpp(41,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Tarohadu\Documents\AIE\Repos\CodeDesign_DataStructures\CDDS_IPC_EntityEditor\EntityEditorApp.cpp(42,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Tarohadu\Documents\AIE\Repos\CodeDesign_DataStructures\CDDS_IPC_EntityEditor\EntityEditorApp.cpp(84,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Tarohadu\Documents\AIE\Repos\CodeDesign_DataStructures\CDDS_IPC_EntityEditor\EntityEditorApp.cpp(87,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Tarohadu\Documents\AIE\Repos\CodeDesign_DataStructures\CDDS_IPC_EntityEditor\EntityEditorApp.cpp(111,25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Tarohadu\Documents\AIE\Repos\CodeDesign_DataStructures\CDDS_IPC_EntityEditor\EntityEditorApp.cpp(114,25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  CDDS_IPC_EntityEditor.vcxproj -> C:\Users\Tarohadu\Documents\AIE\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\bin\x64\Debug\CDDS_IPC_EntityEditor.exe

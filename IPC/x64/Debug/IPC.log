@@ -1,0 +1,3 @@
+﻿  IPC.cpp
+C:\Users\Tarohadu\Documents\AIE\Repos\CodeDesign_DataStructures\IPC\IPC.cpp(31,12): error C2374: 'fileHandle': redefinition; multiple initialization
+C:\Users\Tarohadu\Documents\AIE\Repos\CodeDesign_DataStructures\IPC\IPC.cpp(22): message : see declaration of 'fileHandle'
