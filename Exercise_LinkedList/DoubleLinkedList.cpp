@@ -216,31 +216,36 @@ void DoubleLinkedList::sort()
 	Node* currentNode;
 	Node* nextNode;
 	int temp;
-	bool sorting = true;
+	bool sorted = false;
 
 	currentNode = head;
 
-	if (currentNode == nullptr) return;
-
-	while (sorting)
+	if (currentNode == nullptr) { return; }
+	if (currentNode == tail) { return; }
+	
+	while (!sorted)
 	{
-		sorting = false;
+		sorted = true;
 
-		while (currentNode != nullptr)
+		for (currentNode = head; currentNode != nullptr;)
 		{
 			nextNode = currentNode->next;
 
-
-
+			if (nextNode != nullptr)
+			{
+				if (currentNode->data > nextNode->data)
+				{
+					temp = currentNode->data;
+					currentNode->data = nextNode->data;
+					nextNode->data = temp;
+					sorted = false;
+				}
+			}
 			currentNode = currentNode->next;
 		}
-
-		
-	
 	}
 
 	
-
 }
 
 

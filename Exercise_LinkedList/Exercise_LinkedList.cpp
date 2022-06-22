@@ -79,7 +79,7 @@ int main()
         for (int i : data)
         {
             DrawTextureEx(textures[i], pos, 0, 0.3, RAYWHITE);
-            pos.x += 20;
+            pos.x += 30;
         }
 
         EndDrawing();
