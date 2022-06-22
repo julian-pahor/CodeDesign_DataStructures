@@ -11,19 +11,28 @@
 
 
 EntityEditorApp::EntityEditorApp(int screenWidth, int screenHeight) : m_screenWidth(screenWidth), m_screenHeight(screenHeight) {
-	h = CreateFileMapping
+	entityHandle = CreateFileMapping
 	(
 		INVALID_HANDLE_VALUE,
 		nullptr,
 		PAGE_READWRITE,
-		0, sizeof(Entity),
+		0, sizeof(m_entities),
 		L"MyEntityMemory"
 	);
 
+	intHandle = CreateFileMapping
+	(
+		INVALID_HANDLE_VALUE,
+		nullptr,
+		PAGE_READWRITE,
+		0, sizeof(int),
+		L"MyIntMemory"
+	);
 }
 
 EntityEditorApp::~EntityEditorApp() {
-	CloseHandle(h);
+	CloseHandle(entityHandle);
+	CloseHandle(intHandle);
 }
 
 bool EntityEditorApp::Startup() {
@@ -116,15 +125,19 @@ void EntityEditorApp::Update(float deltaTime) {
 			m_entities[i].y += m_screenHeight;
 	}
 
-	/*int* entityCount = (int*)MapViewOfFile(h, FILE_MAP_ALL_ACCESS, 0, 0, sizeof(int));
+	int* enemyCount = (int*)MapViewOfFile(intHandle, FILE_MAP_ALL_ACCESS, 0, 0, sizeof(int));
 
-	*entityCount = ENTITY_COUNT;*/
+	Entity* entity = (Entity*)MapViewOfFile(entityHandle, FILE_MAP_ALL_ACCESS, 0, 0, sizeof(m_entities));
 
-	Entity* entity = (Entity*)MapViewOfFile(h, FILE_MAP_ALL_ACCESS, 0, 0, sizeof(Entity));
+	*enemyCount = ENTITY_COUNT;
 
-	*entity = m_entities[0];
+	for (int i = 0; i < ENTITY_COUNT; i++)
+	{
+		entity[i] = m_entities[i];
+	}
 
 	UnmapViewOfFile(entity);
+	UnmapViewOfFile(enemyCount);
 
 	//UnmapViewOfFile(entityCount);
 }

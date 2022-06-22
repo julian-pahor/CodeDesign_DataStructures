@@ -2,17 +2,30 @@
 
 EntityDisplayApp::EntityDisplayApp(int screenWidth, int screenHeight) : m_screenWidth(screenWidth), m_screenHeight(screenHeight) {
 
-	h = OpenFileMapping(FILE_MAP_ALL_ACCESS, FALSE, L"MyEntityMemory");
+	entityHandle = OpenFileMapping(FILE_MAP_ALL_ACCESS, FALSE, L"MyEntityMemory");
+	intHandle = OpenFileMapping(FILE_MAP_ALL_ACCESS, FALSE, L"MyIntMemory");
 }
 
 EntityDisplayApp::~EntityDisplayApp() {
-	CloseHandle(h);
+
+	delete[] entityArray;
+	CloseHandle(entityHandle);
+	CloseHandle(intHandle);
+
 }
 
 bool EntityDisplayApp::Startup() {
 
 	InitWindow(m_screenWidth, m_screenHeight, "EntityDisplayApp");
 	SetTargetFPS(60);
+
+	int* enemyCount = (int*)MapViewOfFile(intHandle, FILE_MAP_ALL_ACCESS, 0, 0, sizeof(int));
+
+	m_entityCount = *enemyCount;
+
+	entityArray = new Entity[m_entityCount];
+
+	UnmapViewOfFile(enemyCount);
 
 	return true;
 }
@@ -24,21 +37,20 @@ void EntityDisplayApp::Shutdown() {
 
 void EntityDisplayApp::Update(float deltaTime) {
 
-	/*Entity* entitys = (Entity*)MapViewOfFile(h, FILE_MAP_ALL_ACCESS, 0, 0, sizeof(Entity));
+	
 
-	UnmapViewOfFile(entitys);*/
+	Entity* entity = (Entity*)MapViewOfFile(entityHandle, FILE_MAP_ALL_ACCESS, 0, 0, sizeof(Entity) * m_entityCount);
 
-	/*int* entityCount = (int*)MapViewOfFile(h, FILE_MAP_ALL_ACCESS, 0, 0, sizeof(int));
 
-	m_entityCount = *entityCount;*/
+	for (int i = 0; i < m_entityCount; i++)
+	{
+		entityArray[i] = entity[i];
+	}
 
-	Entity* entity = (Entity*)MapViewOfFile(h, FILE_MAP_ALL_ACCESS, 0, 0, sizeof(Entity));
-
-	m_entities.push_back(*entity);
-
+	
 	UnmapViewOfFile(entity);
 
-	//UnmapViewOfFile(entityCount);
+	
 }
 
 void EntityDisplayApp::Draw() {
@@ -46,13 +58,13 @@ void EntityDisplayApp::Draw() {
 
 	ClearBackground(RAYWHITE);
 
-	// draw entities
-	for (auto& entity : m_entities) {
+	for (int i = 0; i < m_entityCount; i++)
+	{
 		DrawRectanglePro(
-			Rectangle{ entity.x, entity.y, entity.size, entity.size }, // rectangle
-			Vector2{ entity.size / 2, entity.size / 2 }, // origin
-			entity.rotation,
-			Color{ entity.r, entity.g, entity.b, 255 });
+			Rectangle{ entityArray[i].x, entityArray[i].y, entityArray[i].size, entityArray[i].size}, // rectangle
+			Vector2{ entityArray[i].size / 2, entityArray[i].size / 2 }, // origin
+			entityArray[i].rotation,
+			Color{ entityArray[i].r, entityArray[i].g, entityArray[i].b, 255 });
 	}
 
 	// output some text, uses the last used colour

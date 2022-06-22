@@ -28,9 +28,11 @@ protected:
 	int m_screenWidth;
 	int m_screenHeight;
 	// an array of an unknown number of entities
-	std::vector<Entity> m_entities;
+
+	Entity* entityArray;
 	
 	int m_entityCount = 0;
 
-	HANDLE h;
+	HANDLE entityHandle;
+	HANDLE intHandle;
 };
