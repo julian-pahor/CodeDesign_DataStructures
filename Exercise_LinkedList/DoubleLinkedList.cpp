@@ -211,14 +211,37 @@ void DoubleLinkedList::clear()
 	tail = nullptr;
 }
 
-void DoubleLinkedList::print()
+void DoubleLinkedList::sort()
 {
-	if (head == nullptr)
+	Node* currentNode;
+	Node* nextNode;
+	int temp;
+	bool sorting = true;
+
+	currentNode = head;
+
+	if (currentNode == nullptr) return;
+
+	while (sorting)
 	{
-		std::cout << "There was no head to the Double Linked List. :'c" << std::endl;
-		return;
+		sorting = false;
+
+		while (currentNode != nullptr)
+		{
+			nextNode = currentNode->next;
+
+
+
+			currentNode = currentNode->next;
+		}
+
+		
+	
 	}
 
+	
 
 }
+
+
 

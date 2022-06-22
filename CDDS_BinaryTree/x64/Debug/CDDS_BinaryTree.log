@@ -1,11 +1,12 @@
 ﻿  BinaryTree.cpp
   main.cpp
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.6\build\native\include\raygui.h(2352,52): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.6\build\native\include\raygui.h(2385,48): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.6\build\native\include\raygui.h(3059,87): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.6\build\native\include\raygui.h(3060,105): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.6\build\native\include\raygui.h(3061,109): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.6\build\native\include\raygui.h(3062,109): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.6\build\native\include\raygui.h(3063,109): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.7\build\native\include\raygui.h(3273,60): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.7\build\native\include\raygui.h(3274,60): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_BinaryTree\main.cpp(69,67): error C2065: 'RICON_OK_TICK': undeclared identifier
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_BinaryTree\main.cpp(69,12): error C2660: 'GuiButton': function does not take 1 arguments
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.7\build\native\include\raygui.h(1577,6): message : see declaration of 'GuiButton'
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_BinaryTree\main.cpp(76,66): error C2065: 'RICON_CROSS': undeclared identifier
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CDDS_BinaryTree\main.cpp(76,12): error C2660: 'GuiButton': function does not take 1 arguments
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.7\build\native\include\raygui.h(1577,6): message : see declaration of 'GuiButton'
+  TreeNode.cpp
   Generating Code...
-  CDDS_BinaryTree.vcxproj -> C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\bin\x64\Debug\CDDS_BinaryTree.exe

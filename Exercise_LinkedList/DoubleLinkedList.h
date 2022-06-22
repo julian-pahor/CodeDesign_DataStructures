@@ -3,41 +3,43 @@
 #include <assert.h>
 #include <iostream>
 
+class Node
+{
+public:
+
+	Node(int value)
+	{
+		data = value;
+	}
+
+	int data;
+	Node* previous{ nullptr };
+	Node* next{ nullptr };
+};
 
 class DoubleLinkedList
 {
 public:
 
-	class Node
-	{
-	public:
-		Node(int value)
-		{
-			data = value;
-		}
-
-		int data;
-		Node* previous{ nullptr };
-		Node* next{ nullptr };
-	};
+	
 
 	void pushFront(int value);
 	void pushBack(int value);
 	
 	void insert(Node* node, int value);
 
-	auto begin() { return head; }
-	auto end() { return tail->next; }
+	Node* begin() { return head; }
+	Node* end() { return tail->next; }
 
 	auto first() 
 	{ 
 		assert(head != nullptr);
-		return *head; 
+		return head->data; 
 	}
 	auto last() 
 	{
 		assert(tail != nullptr);
-		return *tail;
+		return tail->data;
 	} 
 
 	int count();
@@ -53,10 +55,8 @@ public:
 	bool empty();
 
 	void clear();
-
-	void print();
 	
-
+	void sort();
 
 private:
 
