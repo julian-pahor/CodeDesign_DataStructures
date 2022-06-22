@@ -15,7 +15,7 @@ int main()
     Vector2 pos = { 20, 20 };
     std::vector<int> data;
 
-    InitWindow(800, 450, "raylib [core] example - basic window");
+    InitWindow(1600, 900, "raylib [core] example - basic window");
 
     textures[0] = LoadTexture("tree.png");
     textures[1] = LoadTexture("treePineSnow.png");

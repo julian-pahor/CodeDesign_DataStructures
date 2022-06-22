@@ -1,2 +1,3 @@
-﻿  DoubleLinkedList.cpp
+﻿  Exercise_LinkedList.cpp
+C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\Exercise_LinkedList\Exercise_LinkedList.cpp(81,61): warning C4305: 'argument': truncation from 'double' to 'float'
   Exercise_LinkedList.vcxproj -> C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\x64\Debug\Exercise_LinkedList.exe

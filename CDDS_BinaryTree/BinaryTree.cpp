@@ -8,6 +8,7 @@ Date: 17/4/2015
 #include "raylib.h"
 #include <iostream>
 #include <cstdlib>
+
 using namespace std;
 
 
@@ -71,9 +72,6 @@ void BinaryTree::Insert(int a_nValue)
 		TreeNode* newNode = new TreeNode(a_nValue);
 		prevNode->SetRight(newNode);
 	}
-
-
-
 }
 
 TreeNode* BinaryTree::Find(int a_nValue)
@@ -93,7 +91,9 @@ bool BinaryTree::FindNode(int a_nSearchValue, TreeNode*& ppOutNode, TreeNode*& p
 	{
 		if (a_nSearchValue == currentNode->GetData())
 		{
-			return currentNode;
+			ppOutNode = currentNode;
+			ppOutParent = prevNode;
+			return true;
 		}
 		else
 		{
@@ -114,6 +114,29 @@ bool BinaryTree::FindNode(int a_nSearchValue, TreeNode*& ppOutNode, TreeNode*& p
 
 void BinaryTree::Remove(int a_nValue)
 {
+	TreeNode* currentNode = nullptr;
+	TreeNode* parentNode = nullptr;
+	TreeNode* foundNode = nullptr;
+	
+	foundNode = Find(a_nValue);
+
+	if (foundNode == nullptr) { return; }
+
+	if (foundNode->HasRight())
+	{
+		currentNode = foundNode->GetRight();
+		parentNode = foundNode;
+
+		while (currentNode->HasLeft())
+		{
+			parentNode = currentNode;
+			currentNode = currentNode->GetLeft();
+		}
+
+		foundNode->SetData(currentNode->GetData());
+		
+	}
+
 
 }
 
