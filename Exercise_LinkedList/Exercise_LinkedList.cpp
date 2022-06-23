@@ -7,7 +7,6 @@
 
 int main()
 {
-
     DoubleLinkedList list; 
 
     const static int textureCount = 5;
@@ -28,6 +27,7 @@ int main()
     list.pushBack(2);
     list.pushBack(3);
     list.pushBack(4);
+
 
     while (!WindowShouldClose())
     {

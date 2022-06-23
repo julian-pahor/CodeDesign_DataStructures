@@ -1,4 +1,7 @@
-﻿  main.cpp
+﻿  BinaryTree.cpp
+  TreeNode.cpp
+  main.cpp
 C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.7\build\native\include\raygui.h(3273,60): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
 C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\packages\raylib.4.0.0.7\build\native\include\raygui.h(3274,60): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
   CDDS_BinaryTree.vcxproj -> C:\Users\s214615\Documents\Repos\CodeDesign_DataStructures\CodeDesign_DataStructures_JulianPahor\bin\x64\Debug\CDDS_BinaryTree.exe

@@ -1,4 +1,5 @@
 #include "DoubleLinkedList.h"
+#include <vector>
 
 void DoubleLinkedList::pushFront(int value)
 {
@@ -37,9 +38,8 @@ void DoubleLinkedList::pushBack(int value)
 
 }
 
-void DoubleLinkedList::insert(Node* node, int value)
+void DoubleLinkedList::insert(Node* node, int value) // this is inserting the new node before the passed node;
 {
-	// this is inserting the new node before the passed node;
 	if (node == nullptr)
 	{
 		pushBack(value);
@@ -247,6 +247,63 @@ void DoubleLinkedList::sort()
 
 	
 }
+
+int DoubleLinkedList::getFirst()
+{
+	Node* currentNode = head;
+
+	if (currentNode == nullptr) return NULL;
+
+	return currentNode->data;
+}
+
+int DoubleLinkedList::getLast()
+{
+	Node* currentNode = tail;
+
+	if (currentNode == nullptr) return NULL;
+
+	return currentNode->data;
+}
+
+int DoubleLinkedList::getDataAtIndex(int index)
+{
+	int data;
+	Node* currentNode = head;
+
+	if (currentNode == nullptr) return NULL;
+
+	for (int i = 0; i < index; i++)
+	{
+		currentNode = currentNode->next;
+
+		if (currentNode == nullptr) return NULL;
+	}
+
+	data = currentNode->data;
+
+
+	return data;
+}
+
+std::vector<int> DoubleLinkedList::getAllData()
+{
+	std::vector<int> allData; 
+
+	Node* currentNode = head;
+
+	if (currentNode == nullptr) return allData;
+
+	for (currentNode = head; currentNode != nullptr;)
+	{
+		allData.push_back(currentNode->data);
+		currentNode = currentNode->next;
+	}
+
+	return allData;
+}
+
+
 
 
 

@@ -2,6 +2,7 @@
 
 #include <assert.h>
 #include <iostream>
+#include <vector>
 
 class Node
 {
@@ -20,9 +21,6 @@ public:
 class DoubleLinkedList
 {
 public:
-
-	
-
 	void pushFront(int value);
 	void pushBack(int value);
 	
@@ -36,6 +34,7 @@ public:
 		assert(head != nullptr);
 		return head->data; 
 	}
+
 	auto last() 
 	{
 		assert(tail != nullptr);
@@ -57,6 +56,14 @@ public:
 	void clear();
 	
 	void sort();
+
+	int getFirst();
+
+	int getLast();
+
+	int getDataAtIndex(int index);
+
+	std::vector<int> getAllData();
 
 private:
 

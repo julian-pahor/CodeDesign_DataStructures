@@ -82,7 +82,7 @@ int main(int argc, char* argv[])
         if (GuiButton(Rectangle{ 160, 95, 125, 30 }, GuiIconText(RAYGUI_ICON_BIN, "Remove")))
         {
             // Implement the code to remove the node with value = valueBoxValue from your binary tree here! 
-            //m_binaryTree.Remove(valueBoxValue);
+            m_binaryTree.Remove(valueBoxValue);
         }
 
         // draw the binary tree
