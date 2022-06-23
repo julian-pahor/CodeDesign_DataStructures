@@ -121,6 +121,8 @@ void BinaryTree::Remove(int a_nValue)
 
 	if (!FindNode(a_nValue, foundNode, foundParentNode)) { return; }
 
+	if (foundNode == m_pRoot && !foundNode->HasLeft() && !foundNode->HasRight()) { return; }
+
 	if (foundNode->HasRight())
 	{
 		currentNode = foundNode->GetRight();
